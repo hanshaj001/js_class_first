@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hansh Raj Joshi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 15px; text-align: center; }
+        section { padding: 20px; }
+        .container { width: 80%; margin: auto; }
+        .projects { display: flex; gap: 20px; flex-wrap: wrap; }
+        .project { border: 1px solid #ccc; padding: 15px; flex: 1; }
+        .contact input, .contact textarea { width: 100%; padding: 10px; margin: 5px 0; }
+        .contact button { background: #333; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
 </head>
 <body>
-    <blockquote>
-        <h1>JAVASCRIPT</h1>
-            <P>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo illum earum unde porro, reiciendis error et quia. Obcaecati maiores aut expedita error in odit deserunt facilis iste sunt repellendus sed nostrum soluta adipisci id nobis tenetur facere, voluptatem ipsam beatae. Voluptate corrupti illum consequuntur ut delectus assumenda sunt nostrum repellat. Eius, sed nesciunt voluptatum quibusdam facilis distinctio cupiditate aut veritatis vero est quasi impedit exercitationem, incidunt nemo. At mollitia distinctio rem ratione ex, deserunt, doloribus quibusdam ea itaque nesciunt, ad voluptatum eaque quam cumque voluptate natus. In labore, iste deserunt possimus rem fuga excepturi dolorum consequuntur magnam ratione, vel sit?
-            </P>
-            <button onclick="alert('Welcome to My Website 💫')">Clickk here</button>
-                 <script src="./custom.js"></script>\
-                 <script src="./user.js"> user </script>
-    </blockquote>
+    <header>
+        <h1>Hansh Raj Joshi</h1>
+       
+    </header>
+
+    <section class="container">
+        <h2>About Me</h2>
+
+    </section>
+
+    <section class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container contact">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <script>
+        function sendMessage() {
+            alert('Message Sent!');
+        }
+    </script>
 </body>
 </html>
